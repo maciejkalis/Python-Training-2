@@ -2,6 +2,7 @@
 A simple calculator written in Python to recall conditional statements.
 
 """
+import math
 
 print("Welcome to Simple Calculator!")
 
@@ -36,6 +37,12 @@ elif (choice == 4):
 elif (choice == 5):
     print("The result of exponentiation of numbers a =",
           a, "and b =", b, "is equal to:", a ** b)
+
+elif (choice == 6):
+    print("The square root of the sum of the numbers is:", math.sqrt(a + b))
+
+elif (choice == 7):
+    print("The modulo of numbers is:", a % b)
 
 else:
     print("You have not made a valid operation selection.")
