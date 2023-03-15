@@ -1,5 +1,6 @@
 """
-A program that calculates the area of a figure selected from the menu. Script was written to exercise functions usage.
+A program that calculates the area of a figure selected from the menu.
+Script was written to exercise functions usage.
 
 """
 
