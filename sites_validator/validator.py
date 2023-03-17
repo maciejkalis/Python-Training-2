@@ -7,14 +7,14 @@ import requests
 
 
 def site_validator():
-    FileName = input(
+    fileName = input(
         "Type the name of file which contains websites to check against availability: ")
 
     sitesList = []
     validSites = []
     invalidSites = []
 
-    with open(FileName + ".txt", "r", encoding="UTF-8") as file:
+    with open(fileName + ".txt", "r", encoding="UTF-8") as file:
         for line in file:
             sitesList.append(line.replace("\n", ""))
 
