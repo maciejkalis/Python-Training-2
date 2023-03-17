@@ -1,2 +1,4 @@
 http://www.cdur.pl/akordsdfsdf
 https://pypi.org/wrongurl
+http://www.cdur.pl/akordsdfsdf
+https://pypi.org/wrongurl
