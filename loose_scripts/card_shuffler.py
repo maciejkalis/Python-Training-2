@@ -10,23 +10,20 @@ cardList = ["9", "9", "9", "9",
             "Joker", "Joker"]
 
 
-random.shuffle(cardList)
+def card_croupier(deck, player_1, player_2):
+    random.shuffle(deck)
+    player_1 = []
+    player_2 = []
+    n = 0
 
-deckPlayerOne = []
+    while n < 5:
+        card = deck.pop()
+        player_1.append(card)
 
-deckPlayerTwo = []
+        card = deck.pop()
+        player_2.append(card)
+        n += 1
+    return player_1, player_2
 
-n = 0
 
-while n < 5:
-    card = cardList.pop()
-    deckPlayerOne.append(card)
-
-    card = cardList.pop()
-    deckPlayerTwo.append(card)
-
-    n += 1
-
-print(deckPlayerOne)
-
-print(deckPlayerTwo)
+print(card_croupier(cardList, "Maciej", "Kamil"))
