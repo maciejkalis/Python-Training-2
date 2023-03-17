@@ -1,6 +1,6 @@
 """
 Load names and surnames from a file named:
-namesSurnames.txt
+namessurnames.txt
 
 1) split them up to make a list of tuples, where the inner tuples are
 first/last pairs
@@ -11,7 +11,7 @@ first/last pairs
 
 namesAndSurnames = []
 
-with open("namesSurnames.txt", "r", encoding="UTF-8") as file:
+with open("namessurnames.txt", "r", encoding="UTF-8") as file:
     for line in file:
         namesAndSurnames.append(tuple(line.replace("\n", "").split(" ")))
 
