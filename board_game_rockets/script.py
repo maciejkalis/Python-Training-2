@@ -21,3 +21,6 @@ rocket1 = Rocket(speed=3, altitude=4, x=7)
 rocket2 = Rocket(speed=8, altitude=2, x=5)
 
 print(RocketBoard.get_distance(rocket1, rocket2))
+
+print(board.get_amount_of_rockets())
+print(len(board))
