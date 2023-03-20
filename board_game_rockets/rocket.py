@@ -1,5 +1,20 @@
 """
+It's a simple, theoretical board game made to practice object-oriented paradigm of programming.
+In this module there are two classes defined.
+The based one - Rocket, there is constructor which defines attributes such as:
+- altitude
+- speed
+- x coordinate of "rocket object"
 
+Second class RocketBoard creates board object with list of Rocket objects inside.
+
+There are methods such as moveUp() or get_distance() to move objects on board randomly,
+based on defined attributes and calculates the distance between them accordingly.
+
+The get_distance() method has been defined in the Rocket class
+(in which can be called from object created based on that class), as well as in the RocketBoard
+in which it was defined as static method so it is possible to call the function
+directly from the class.
 
 """
 from __future__ import annotations
