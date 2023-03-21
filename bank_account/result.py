@@ -1,8 +1,3 @@
-"""
-
-"""
-
-
 class Result:
 
     def __init__(self, message, value=None):
@@ -20,9 +15,15 @@ class Ok(Result):
         super().__init__(message, value)
         self.isSuccess = True
 
+    def __str__(self):
+        return self.message + " " + str(self.value)
+
 
 class Error(Result):
 
     def __init__(self, message, value=None):
         super().__init__(message, value)
         self.isSuccess = False
+
+    def __str__(self):
+        return self.message + " " + str(self.value)
