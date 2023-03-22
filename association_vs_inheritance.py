@@ -45,5 +45,4 @@ class Cuboid:
 cuboid = Cuboid(Rectangle(2, 3), 4)
 
 print(cuboid.count_surface_area())
-
 print(cuboid.count_volume())
